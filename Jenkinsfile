@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage (GitCheckout) {
             steps {
-                git branch: 'J2EE', url: 'git@github.com:VTechnologies-NagireddyVenna/onlinebookstore.git'
+                git branch: 'J2EE', url: 'https://github.com/VTechnologies-NagireddyVenna/onlinebookstore.git'
             }
         }
     }
