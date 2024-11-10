@@ -1,12 +1,14 @@
 pipeline {
     agent any 
+   // agent { 
+   //    label 'Scipt_Slave' 
+   // }
     stages {
-        stage('echocondition'){
+        stage (GitCheckout) {
             steps {
-            sh '''sleep 90'''
-            sh 'echo "Hello-world"'    
+                git branch: 'J2EE', url: 'git@github.com:VTechnologies-NagireddyVenna/onlinebookstore.git'
             }
-
         }
     }
 }
+
